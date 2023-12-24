@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Wallet/SelfAuthorize.sol": "SelfAuthorize"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Wallet/SelfAuthorize.sol": {
+			"keccak256": "0x14ca000060bb63429fcbb4a94343d35bb379258ca950fced775f56069a2139d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9dbadcae8aaa1b9a7eec337d874fe8ac1ee589cc87c1ab9243d52e6c0b3b20dd",
+				"dweb:/ipfs/QmVh2SeaepQi5iv2sxUS6iJCQCouNckdhs25tiB4mybmFB"
+			]
+		}
+	},
+	"version": 1
+}

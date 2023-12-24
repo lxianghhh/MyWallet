@@ -1,0 +1,229 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "AddOwner",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "threshold",
+						"type": "uint256"
+					}
+				],
+				"name": "ChangeThreshold",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "preowner",
+						"type": "address"
+					}
+				],
+				"name": "RemoveOwner",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "new_threshold",
+						"type": "uint256"
+					}
+				],
+				"name": "addOwnersAndThreshold",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "new_threshold",
+						"type": "uint256"
+					}
+				],
+				"name": "changeThreshold",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkOwners",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkThreshold",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_direction",
+						"type": "bool"
+					}
+				],
+				"name": "getAdjacent",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "ownerExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owners_num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "preowner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "new_threshold",
+						"type": "uint256"
+					}
+				],
+				"name": "removeOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Wallet/ManageOwner.sol": "ManageOwner"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Wallet/ManageOwner.sol": {
+			"keccak256": "0x43a0031c78355d71f627de629f84f9e9216338f9f261f5cc529e6ef43c21f13d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9613eec890d1f044d3ae57325d016e2582b5abc358c42cb94c117a3d837d2776",
+				"dweb:/ipfs/QmXbMzeMbPh8hKVxE6uYeJvWX6aCiWg8MfwabyF8fWm7Ta"
+			]
+		},
+		"contracts/Wallet/SelfAuthorize.sol": {
+			"keccak256": "0x14ca000060bb63429fcbb4a94343d35bb379258ca950fced775f56069a2139d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9dbadcae8aaa1b9a7eec337d874fe8ac1ee589cc87c1ab9243d52e6c0b3b20dd",
+				"dweb:/ipfs/QmVh2SeaepQi5iv2sxUS6iJCQCouNckdhs25tiB4mybmFB"
+			]
+		}
+	},
+	"version": 1
+}
